@@ -1,0 +1,480 @@
+<div id="serendib-organic-story" class="container-fluid p-0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Absolute Template 3 Color Palette Matrix Integration */
+    :root {
+      --deep-chicory: #52361B;      /* Primary Typography & Dark Text Segments */
+      --golden-turmeric: #C99757;   /* Accent Backgrounds & Highlight Elements */
+      --spiced-tamarind: #8C431D;   /* Call-To-Action (CTA) & Focus Targets */
+      --jute-parchment: #EFE8DE;    /* App Canvas Grid Backdrop */
+      --pure-white: #FFFFFF;
+      --faint-border: rgba(82, 54, 27, 0.08);
+    }
+
+    /* Suppress Native Footers Only - Preserving Native Navigation Header Elements */
+    body footer, 
+    body .o_footer, 
+    #wrapwrap > footer,
+    main + footer {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    #serendib-organic-story {
+      background-color: var(--jute-parchment);
+      color: var(--deep-chicory);
+      font-family: 'Plus Jakarta Sans', sans-serif; /* Interface Body Text Rules */
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* Core Typographic Hierarchy */
+    #serendib-organic-story h1, 
+    #serendib-organic-story h2, 
+    #serendib-organic-story h3, 
+    #serendib-organic-story h4, 
+    #serendib-organic-story .serif-display {
+      font-family: 'Cormorant Garamond', serif; /* Display Headings Rules */
+      color: var(--deep-chicory);
+    }
+
+    /* Animated Entrance Assets */
+    @keyframes cinematicEntrance {
+      0% { opacity: 0; transform: translateY(20px); filter: blur(3px); }
+      100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+    }
+
+    .animate-cinematic-layer {
+      animation: cinematicEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    /* Stacked Structural Layout Configurations (Portrait Alignment Flow) */
+    .page-section-block {
+      padding: 80px 0;
+      width: 100%;
+    }
+
+    /* User Image Requisition Container System */
+    .graphic-pane-frame {
+      overflow: hidden;
+      border-radius: 4px;
+      width: 100%;
+      position: relative;
+    }
+
+    .hero-graphic-dimensions {
+      aspect-ratio: 16/10;
+      min-height: 380px;
+      margin-bottom: 35px;
+    }
+
+    .graphic-pane-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Interactive Action Buttons Configuration */
+    .btn-tamarind {
+      background-color: var(--spiced-tamarind);
+      color: var(--pure-white);
+      font-weight: 600;
+      border: 1px solid var(--spiced-tamarind);
+      padding: 14px 36px;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-tamarind:hover {
+      background-color: transparent;
+      color: var(--spiced-tamarind);
+      box-shadow: 0 8px 20px rgba(140, 67, 29, 0.1);
+    }
+
+    /* Adjusted Outline Hover States with Custom Variant Interactions */
+    .btn-chicory-outline {
+      background-color: transparent;
+      color: var(--deep-chicory);
+      border: 1px solid rgba(82, 54, 27, 0.25);
+      padding: 14px 36px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-chicory-outline:hover {
+      background-color: var(--golden-turmeric);
+      color: var(--pure-white);
+      border-color: var(--golden-turmeric);
+      box-shadow: 0 8px 20px rgba(199, 151, 87, 0.2);
+    }
+
+    .organic-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--spiced-tamarind);
+      background-color: rgba(140, 67, 29, 0.06);
+      padding: 6px 16px;
+      margin-bottom: 24px;
+      display: inline-block;
+      font-weight: 700;
+      border-radius: 2px;
+    }
+
+    /* High-Visibility Pull Quote Module Block */
+    .editorial-quote-box {
+      background-color: var(--pure-white);
+      border-left: 3px solid var(--spiced-tamarind);
+      padding: 30px;
+      margin: 35px 0 0 0;
+      border-radius: 0 4px 4px 0;
+      box-shadow: 0 10px 25px rgba(82, 54, 27, 0.01);
+    }
+
+    .editorial-quote-box p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--deep-chicory) !important;
+      font-style: italic;
+    }
+
+    /* Process Step Cards Layout */
+    .process-step-card {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      padding: 40px 30px;
+      border-radius: 4px;
+      height: 100%;
+    }
+
+    .process-icon {
+      color: var(--spiced-tamarind);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    /* Empowering Communities Highlight Banner Block */
+    .community-panel-banner {
+      background-color: var(--golden-turmeric);
+      border-radius: 4px;
+      padding: 60px;
+      box-shadow: 0 15px 35px rgba(82, 54, 27, 0.03);
+    }
+
+    /* Pillars Infrastructure Grid Blocks */
+    .pillar-box-item {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      padding: 35px;
+      border-radius: 4px;
+      height: 100%;
+    }
+
+    /* Custom Footer Base Wrapper - Rectifying Layout Alignment Anomalies From image_e32c97.png */
+    .footer-organic-base {
+      background-color: #2E2216 !important;
+      border-top: 1px solid rgba(82, 54, 27, 0.05);
+      padding: 80px 0 40px 0;
+      font-size: 0.95rem;
+      color: var(--jute-parchment);
+      width: 100%;
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    .footer-organic-base h3,
+    .footer-organic-base h4 {
+      color: var(--pure-white);
+    }
+
+    /* Fixed Visibility Contrast Parameters On System Header Content Layout Elements */
+    .footer-meta-header {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #EAD0A8 !important; /* Elevated High Visibility Ivory Tinted Palette Definition */
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .footer-matrix-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-matrix-links li {
+      margin-bottom: 12px;
+      text-align: left; /* Enforces clean linear flush layout tracking */
+    }
+
+    .footer-matrix-links a {
+      color: rgba(239, 232, 222, 0.75);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-matrix-links a:hover {
+      color: var(--pure-white);
+    }
+
+    /* Center-aligned Input Container Matrix Fixes */
+    .newsletter-form-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .newsletter-entry-card input {
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--pure-white);
+      padding: 14px;
+      font-size: 0.95rem;
+      border-radius: 4px 0 0 4px;
+      text-align: center; /* Harmonizes inner text positioning rules */
+    }
+
+    .newsletter-entry-card input::placeholder {
+      color: rgba(239, 232, 222, 0.45);
+    }
+
+    .btn-newsletter-arrow {
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--pure-white);
+      padding: 14px 24px;
+      border-radius: 0 4px 4px 0;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-newsletter-arrow:hover {
+      background-color: var(--golden-turmeric);
+      color: #2E2216;
+    }
+
+    /* Screen Constraint and Mobile Adjustments to Prevent Screen Bleed Loops */
+    @media (max-width: 991.98px) {
+      #serendib-organic-story p,
+      #serendib-organic-story .lh-base,
+      #serendib-organic-story font,
+      #serendib-organic-story li,
+      #serendib-organic-story span:not(.organic-badge) {
+        text-align: center !important;
+      }
+
+      .page-section-block {
+        padding: 60px 0;
+      }
+
+      .btn-tamarind, .btn-chicory-outline {
+        width: 100% !important;
+        max-width: 320px;
+      }
+
+      .mobile-center-elements {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+      }
+
+      .hero-graphic-dimensions {
+        min-height: 260px;
+      }
+
+      .col-mobile-100 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+
+      .community-panel-banner {
+        padding: 45px 20px;
+      }
+
+      /* Center links track on mobile layouts to completely avoid misaligned stacks */
+      .footer-matrix-links li {
+        text-align: center !important;
+      }
+
+      .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      
+      .col-12, .col-6 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+    }
+  </style>
+
+  
+  <section class="page-section-block px-3 px-lg-5 animate-cinematic-layer">
+    <div class="container-fluid p-0">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <div class="col-12 col-lg-6 order-1">
+          <div class="graphic-pane-frame hero-graphic-dimensions">
+            <img src="https://mars-ai-tech1001-industry--training-bn24-cloud-s10--33224955.dev.odoo.com/web/image/2723-64e528fa/our%20story%201.png" alt="Artisanal Ceylon Heritage Plantation Slopes" onerror="this.style.display='none'" loading="lazy">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 order-2 mobile-center-elements">
+          <span class="organic-badge">History &amp; Tradition</span>
+          <h1 class="display-3 fw-bold mb-4" style="line-height: 1.15;">A Century of Pure<br>Ceylon Heritage</h1>
+          <div style="color: var(--deep-chicory); opacity: 0.85; font-size: 1rem; line-height: 1.75;">
+            <p class="mb-3">Serendib Spice Haven is one company hundred-year our history: of community, traditional sourcing and healing flowers indicators with historic sun-drying fields supporting outcomes with traditional sources, and the local traditional makers and cultivators are necessarily allocated for the quality of production.</p>
+            <p class="mb-4">We are dedicated to quality with our company values of our fields high quality and source/important education and resilient summary of management and in its smooth quality and customers dedication with quality and products contained and matrices and quality sources, multidimensional dedicated to quality qualities in our company.</p>
+          </div>
+
+          
+          <div class="editorial-quote-box text-start w-100">
+            <p class="m-0">"Our ancestors taught us to respect the soil, and we carry that wisdom in every spice we hand-select."</p>
+            <div class="profile-identity-strip">
+              <h5 class="small text-uppercase tracking-wider opacity-75">- Head Cultivator</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="page-section-block px-3 px-lg-5" style="background-color: rgba(82, 54, 27, 0.01);">
+    <div class="container-fluid p-0 text-center">
+      
+      <div class="mb-5 pb-2">
+        <h2 class="display-5 fw-bold">From Seed to Seal</h2>
+      </div>
+
+      <div class="row g-4 text-center">
+        
+        <div class="col-6 col-lg-3 col-mobile-100">
+          <div class="process-step-card mobile-center-elements">
+            <div class="process-icon"><i class="fa fa-leaf fa-2x"></i></div>
+            <h4 class="h5 fw-bold mb-3">Ethical Cultivation</h4>
+            <p class="small text-muted m-0" style="line-height: 1.6;">Ethical cultivation to ensure our methods to historical landscapes and ethical cultivation.</p>
+          </div>
+        </div>
+        
+        <div class="col-6 col-lg-3 col-mobile-100">
+          <div class="process-step-card mobile-center-elements">
+            <div class="process-icon"><i class="fa fa-sun-o"></i></div>
+            <h4 class="h5 fw-bold mb-3">Traditional Sun-Drying</h4>
+            <p class="small text-muted m-0" style="line-height: 1.6;">Traditional sun-drying from our early harvesting methods and in-house customized traditional sun-drying.</p>
+          </div>
+        </div>
+        
+        <div class="col-6 col-lg-3 col-mobile-100">
+          <div class="process-step-card mobile-center-elements">
+            <div class="process-icon"><i class="fa fa-sliders"></i></div>
+            <h4 class="h5 fw-bold mb-3">Rigorous Grading</h4>
+            <p class="small text-muted m-0" style="line-height: 1.6;">Rigorous grading, our grades assess quality, processing loops and rigorous essential grading.</p>
+          </div>
+        </div>
+        
+        <div class="col-6 col-lg-3 col-mobile-100">
+          <div class="process-step-card mobile-center-elements">
+            <div class="process-icon"><i class="fa fa-globe"></i></div>
+            <h4 class="h5 fw-bold mb-3">Global Export</h4>
+            <p class="small text-muted m-0" style="line-height: 1.6;">Global export matching global standard protocols on world-wide distribution networks, thorough global export.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="page-section-block px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="community-panel-banner row align-items-center g-4 text-center text-lg-start">
+        
+        <div class="col-12 col-lg-8 mobile-center-elements">
+          <h2 class="serif-display text-dark mb-3">Empowering Sri Lankan Farming Communities</h2>
+          <p class="m-0 text-dark opacity-75 fs-6" style="line-height: 1.6; max-width: 620px;">
+            Fair-trade community profit allocated to community profit and communities to create sustainable communities for supporting education and healthcare.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center text-lg-end">
+          <div class="d-flex flex-column gap-3 align-items-center align-items-lg-end">
+            <a href="#" class="btn btn-tamarind" style="background-color: var(--deep-chicory); border-color: var(--deep-chicory);">Read Impact Report</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="footer-organic-base px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="row g-4 g-lg-5 mb-5 text-center text-sm-start justify-content-center">
+        
+        
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <h4 class="small fw-bold tracking-wider text-uppercase mb-3 font-sans" style="color: #EAD0A8;">Newsletter email subscription</h4>
+          <p class="small text-white-50 mb-3 newsletter-form-wrapper">Enter your-email subscription field to stay connected with seasonal harvests.</p>
+          <div class="newsletter-form-wrapper">
+            <form action="/website/form/" method="post" data-model_name="crm.lead" class="d-flex newsletter-entry-card w-100">
+              <input type="email" placeholder="Enter email address" required="1" class="form-control">
+              <button type="submit" class="btn btn-newsletter-arrow"><i class="fa fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+        
+        
+        <div class="col-6 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+          <h4 class="footer-meta-header">Quick Links</h4>
+          <ul class="footer-matrix-links small p-0 m-0">
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Spices</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-6 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+          <h4 class="footer-meta-header">Customer Support</h4>
+          <ul class="footer-matrix-links small p-0 m-0">
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Quick houses</a></li>
+            <li><a href="#">Refravir links</a></li>
+            <li><a href="#">Customer support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-4 mt-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 border-top border-secondary small text-white-50 text-center text-sm-start">
+        <div>© 2026 SERENDIB SPICE HAVEN. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
