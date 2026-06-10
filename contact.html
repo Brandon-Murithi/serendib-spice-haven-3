@@ -1,0 +1,654 @@
+<div id="serendib-organic-contact" class="container-fluid p-0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Absolute Template 3 Color Palette Matrix Integration */
+    :root {
+      --deep-chicory: #52361B;      /* Primary Typography & Dark Text Segments */
+      --golden-turmeric: #C99757;   /* Accent Backgrounds & Highlight Elements */
+      --spiced-tamarind: #8C431D;   /* Call-To-Action (CTA) & Focus Targets */
+      --jute-parchment: #EFE8DE;    /* App Canvas Grid Backdrop */
+      --pure-white: #FFFFFF;
+      --faint-border: rgba(82, 54, 27, 0.08);
+    }
+
+    /* Suppress Native Footers Only - Preserving Native Navigation Header Elements */
+    body footer, 
+    body .o_footer, 
+    #wrapwrap > footer,
+    main + footer {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    #serendib-organic-contact {
+      background-color: var(--jute-parchment);
+      color: var(--deep-chicory);
+      font-family: 'Plus Jakarta Sans', sans-serif; /* Interface Body Text Rules */
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* Core Typographic Hierarchy */
+    #serendib-organic-contact h1, 
+    #serendib-organic-contact h2, 
+    #serendib-organic-contact h3, 
+    #serendib-organic-contact h4, 
+    #serendib-organic-contact .serif-display {
+      font-family: 'Cormorant Garamond', serif; /* Display Headings Rules */
+      color: var(--deep-chicory);
+    }
+
+    /* Animated Entrance Assets */
+    @keyframes cinematicEntrance {
+      0% { opacity: 0; transform: translateY(20px); filter: blur(3px); }
+      100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+    }
+
+    .animate-cinematic-layer {
+      animation: cinematicEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    /* Stacked Structural Layout Configurations (Portrait Alignment Flow) */
+    .page-section-block {
+      padding: 80px 0;
+      width: 100%;
+    }
+
+    /* User Image Requisition Container System */
+    .graphic-pane-frame {
+      overflow: hidden;
+      border-radius: 4px;
+      width: 100%;
+      position: relative;
+    }
+
+    .network-placeholder-dimensions {
+      aspect-ratio: 21/9;
+      min-height: 350px;
+    }
+
+    /* Fixed profile dimensions loop shell */
+    .profile-image-dimensions {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: rgba(82, 54, 27, 0.05);
+      border: 2px solid var(--golden-turmeric);
+      flex-shrink: 0;
+    }
+
+    .graphic-pane-frame img,
+    .profile-image-dimensions img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Decorative Badges & Structural Tags */
+    .contact-badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--spiced-tamarind);
+      background-color: rgba(140, 67, 29, 0.06);
+      padding: 6px 16px;
+      margin-bottom: 24px;
+      display: inline-block;
+      font-weight: 700;
+      border-radius: 2px;
+    }
+
+    /* Communication Cards Matrix Channels */
+    .channel-card-item {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      padding: 30px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .channel-icon-avatar {
+      width: 48px;
+      height: 48px;
+      background-color: rgba(140, 67, 29, 0.06);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--spiced-tamarind);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    /* Capabilities Badge Matrix Grid */
+    .meta-pills-row-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .meta-spec-pill {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      padding: 16px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--deep-chicory);
+    }
+
+    /* Inquiry Gateway Secure Submission Portal Form Layout */
+    .gateway-portal-panel {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      border-radius: 4px;
+      padding: 45px;
+      box-shadow: 0 10px 30px rgba(82, 54, 27, 0.01);
+    }
+
+    .gateway-portal-panel label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--deep-chicory);
+      opacity: 0.8;
+      margin-bottom: 8px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .gateway-portal-panel input,
+    .gateway-portal-panel select,
+    .gateway-portal-panel textarea {
+      background-color: var(--pure-white);
+      border: 1px solid rgba(82, 54, 27, 0.12);
+      color: var(--deep-chicory);
+      padding: 14px;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    /* High Legibility Form Rules Preventing Field Cutoffs */
+    .gateway-portal-panel input::placeholder,
+    .gateway-portal-panel textarea::placeholder {
+      font-size: 0.9rem !important;
+      color: rgba(82, 54, 27, 0.4) !important;
+      text-align: center !important;
+    }
+
+    .gateway-portal-panel select {
+      padding-right: 40px !important;
+      text-align-last: center;
+    }
+
+    /* Interactive Action Buttons Configuration */
+    .btn-tamarind-submit {
+      background-color: var(--spiced-tamarind);
+      color: var(--pure-white);
+      font-weight: 600;
+      border: 1px solid var(--spiced-tamarind);
+      padding: 16px;
+      width: 100%;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-tamarind-submit:hover {
+      background-color: #6d3214;
+      border-color: #6d3214;
+    }
+
+    /* Secondary Button Variant Interactions */
+    .btn-chicory-outline {
+      background-color: transparent;
+      color: var(--deep-chicory);
+      border: 1px solid rgba(82, 54, 27, 0.25);
+      padding: 12px 32px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-chicory-outline:hover {
+      background-color: var(--golden-turmeric);
+      color: var(--pure-white);
+      border-color: var(--golden-turmeric);
+      box-shadow: 0 8px 20px rgba(199, 151, 87, 0.2);
+    }
+
+    /* Content Overlay Cards For Maritime Frame */
+    .network-overlay-card {
+      background-color: rgba(82, 54, 27, 0.95);
+      border-left: 4px solid var(--golden-turmeric);
+      padding: 30px;
+      border-radius: 0 4px 4px 0;
+      color: var(--pure-white);
+    }
+
+    .network-overlay-card h3 {
+      color: var(--pure-white);
+    }
+
+    .director-profile-testimonial {
+      background-color: var(--pure-white);
+      border: 1px solid var(--faint-border);
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 10px 25px rgba(82, 54, 27, 0.02);
+    }
+
+    .profile-identity-strip {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .profile-identity-strip h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* Custom Embedded System Div Footer Layout */
+    .footer-organic-base {
+      background-color: #2E2216 !important;
+      border-top: 1px solid rgba(82, 54, 27, 0.05);
+      padding: 80px 0 40px 0;
+      font-size: 0.95rem;
+      color: var(--jute-parchment);
+      width: 100%;
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    .footer-organic-base h3,
+    .footer-organic-base h4 {
+      color: var(--pure-white);
+    }
+
+    .footer-meta-header {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #EAD0A8 !important;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .footer-matrix-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-matrix-links li {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .footer-matrix-links a {
+      color: rgba(239, 232, 222, 0.75);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-matrix-links a:hover {
+      color: var(--pure-white);
+    }
+
+    .newsletter-form-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .newsletter-entry-card input {
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--pure-white);
+      padding: 14px;
+      font-size: 0.95rem;
+      border-radius: 4px 0 0 4px;
+      text-align: center;
+    }
+
+    .newsletter-entry-card input::placeholder {
+      color: rgba(239, 232, 222, 0.45);
+    }
+
+    .btn-newsletter-arrow {
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--pure-white);
+      padding: 14px 24px;
+      border-radius: 0 4px 4px 0;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-newsletter-arrow:hover {
+      background-color: var(--golden-turmeric);
+      color: #2E2216;
+    }
+
+    /* Screen Constraint and Mobile Adjustments to Prevent Screen Bleed Loops */
+    @media (max-width: 991.98px) {
+      #serendib-organic-contact p,
+      #serendib-organic-contact .lh-base,
+      #serendib-organic-contact font,
+      #serendib-organic-contact li,
+      #serendib-organic-contact span:not(.contact-badge) {
+        text-align: center !important;
+      }
+
+      .page-section-block {
+        padding: 60px 0;
+      }
+
+      .mobile-center-block {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px !important;
+      }
+
+      .channel-card-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 30px 20px !important;
+      }
+
+      .meta-pills-row-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+      }
+
+      .gateway-portal-panel {
+        padding: 30px 20px;
+      }
+
+      /* Image adjustments for mobile view display constraints */
+      .network-placeholder-dimensions {
+        min-height: auto;
+        aspect-ratio: 16/10 !important;
+      }
+
+      /* Drops background absolute overlay positioning rules on mobile devices to flow content underneath image */
+      .mobile-overlay-suppress {
+        position: relative !important;
+        background: transparent !important;
+        padding: 40px 15px 0 15px !important;
+        height: auto !important;
+      }
+
+      .mobile-overlay-suppress .row {
+        flex-direction: column !important;
+        gap: 30px !important;
+      }
+
+      .mobile-overlay-suppress .col-md-5 {
+        width: 100% !important;
+      }
+
+      .network-overlay-card {
+        background-color: var(--pure-white) !important;
+        color: var(--deep-chicory) !important;
+        border: 1px solid var(--faint-border) !important;
+        border-left: 4px solid var(--golden-turmeric) !important;
+        border-radius: 4px !important;
+        text-align: center !important;
+      }
+
+      .network-overlay-card h3 {
+        color: var(--deep-chicory) !important;
+      }
+
+      /* Hard positioning rule to force the dp profile block to render on the bottom right of the container card stack */
+      .profile-identity-strip {
+        flex-direction: row-reverse !important;
+        text-align: right !important;
+        justify-content: flex-end !important;
+      }
+
+      .gateway-portal-panel input,
+      .gateway-portal-panel select,
+      .gateway-portal-panel textarea {
+        font-size: 0.85rem !important;
+        padding: 12px 10px !important;
+      }
+
+      .footer-matrix-links li {
+        text-align: center !important;
+      }
+
+      .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      
+      .col-12, .col-6 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+    }
+  </style>
+
+  
+  <header class="page-section-block text-center px-3 px-lg-5 pb-0 animate-cinematic-layer">
+    <span class="contact-badge">Spice Masters Since 1948</span>
+    <h1 class="display-4 fw-bold mb-4">Connect With Our Spice Masters</h1>
+    <p class="fs-5 mx-auto m-0 text-muted" style="max-width: 720px; line-height: 1.6;">
+      Our heritage trade desk operates continuously across three continents, ensuring direct access to Ceylon’s finest spice estates. Whether you seek container-scale procurement or bespoke blending consultation, our seasoned merchants are available to guide your journey.
+    </p>
+  </header>
+
+  
+  <section class="page-section-block px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="row g-4 g-lg-5">
+        
+        
+        <div class="col-12 col-lg-5 order-2 order-lg-1">
+          
+          
+          <div class="channel-card-item text-start">
+            <div class="channel-icon-avatar"><i class="fa fa-phone"></i></div>
+            <div>
+              <span class="d-block small text-muted text-uppercase tracking-wider" style="font-size: 0.7rem; font-weight: 700;">Direct Concierge Line</span>
+              <h4 class="h5 fw-bold m-0 mt-1 text-dark">+94 11 234 5678</h4>
+              <p class="small m-0 text-muted mt-1">Response within 2 hours</p>
+            </div>
+          </div>
+
+          
+          <div class="channel-card-item text-start">
+            <div class="channel-icon-avatar"><i class="fa fa-envelope-o"></i></div>
+            <div>
+              <span class="d-block small text-muted text-uppercase tracking-wider" style="font-size: 0.7rem; font-weight: 700;">Logistics Operations</span>
+              <h4 class="h5 fw-bold m-0 mt-1 text-dark">trade@serendibspice.lk</h4>
+              <p class="small m-0 text-muted mt-1">Response within 4 hours</p>
+            </div>
+          </div>
+
+          
+          <div class="channel-card-item text-start">
+            <div class="channel-icon-avatar"><i class="fa fa-map-marker"></i></div>
+            <div>
+              <span class="d-block small text-muted text-uppercase tracking-wider" style="font-size: 0.7rem; font-weight: 700;">Corporate Headquarters</span>
+              <h4 class="h5 fw-bold m-0 mt-1 text-dark">142 Galle Road, Colombo 03</h4>
+              <p class="small m-0 text-muted mt-1">Visit by appointment</p>
+            </div>
+          </div>
+
+          
+          <div class="meta-pills-row-grid">
+            <div class="meta-spec-pill">Global Cargo Operations</div>
+            <div class="meta-spec-pill">FOB &amp; CIF Documentation</div>
+            <div class="meta-spec-pill">Multi-ton Capacity</div>
+            <div class="meta-spec-pill">Private Label Available</div>
+          </div>
+
+        </div>
+
+        
+        <div class="col-12 col-lg-7 order-1 order-lg-2">
+          <div class="gateway-portal-panel shadow-sm">
+            <h2 class="serif-display h3 mb-4 fw-bold">Inquiry Gateway</h2>
+            
+            <form action="/website/form/" method="post" data-model_name="crm.lead">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label>Full Name</label>
+                  <input type="text" id="full_name" name="contact_name" placeholder="Full Name" required="1">
+                </div>
+                
+                <div class="col-12">
+                  <label>Business Email</label>
+                  <input type="email" id="biz_email" name="email_from" placeholder="Business Email" required="1">
+                </div>
+
+                <div class="col-12">
+                  <label>Inquiry Type</label>
+                  <select id="inquiry_type" name="type_id" required="1">
+                    <option value="">Inquiry Type</option>
+                    <option value="wholesale">Bulk Wholesale Requisitions</option>
+                    <option value="blends">Bespoke Custom Blending</option>
+                    <option value="freight">Port Logistics &amp; Freight Demands</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label>Message Specifications</label>
+                  <textarea id="specs_text" name="description" rows="4" placeholder="Message Specifications"></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-tamarind-submit">Submit Inquiry</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="page-section-block px-3 px-lg-5 pt-0">
+    <div class="container-fluid p-0">
+      <div class="graphic-pane-frame network-placeholder-dimensions align-items-center justify-content-start">
+        <img src="https://mars-ai-tech1001-industry--training-bn24-cloud-s10--33224955.dev.odoo.com/web/image/2713-5465bc03/contact%20shipping.jpeg" alt="Maritime Sourcing Hub Logistics Visual Background View" onerror="this.style.display='none'" loading="lazy">
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 p-4 p-md-5 d-flex align-items-center mobile-overlay-suppress">
+          <div class="row w-100 align-items-center g-4">
+            
+            
+            <div class="col-12 col-md-5 text-start">
+              <div class="network-overlay-card">
+                <h3 class="serif-display fw-bold mb-2">Ceylon Estate Network</h3>
+                <p class="small text-uppercase tracking-wider mb-3" style="color: var(--golden-turmeric); font-weight: 600;">Galle, Matale &amp; Kandy Districts</p>
+                <p class="small m-0 opacity-90" style="line-height: 1.6;">
+                  Direct partnerships with certified organic estates across Sri Lanka’s premium spice-growing regions.
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="col-12 col-md-5 offset-md-2 text-start">
+              <div class="director-profile-testimonial">
+                <p class="small text-muted italic mb-3">"We handle every container as if it were a single vial of gold."</p>
+                <div class="profile-identity-strip align-items-center mt-0">
+                  <div class="profile-image-dimensions">
+                    <img src="https://mars-ai-tech1001-industry--training-bn24-cloud-s10--33224955.dev.odoo.com/web/image/2712-8e207e54/contact%20profile%20dp.jpg?height=256" alt="Rajesh Kumar Profile Display" onerror="this.style.display='none'" loading="lazy">
+                  </div>
+                  <div>
+                    <h4 class="h6 fw-bold text-dark m-0">Rajesh Kumar</h4>
+                    <p class="small text-muted m-0 text-uppercase tracking-wider mt-1" style="font-size: 0.65rem; font-weight: 600;">Logistics Director</p>
+                    <span class="d-inline-block small text-dark mt-2" style="font-size: 0.75rem; background-color: rgba(201, 151, 87, 0.1); padding: 2px 8px; border-radius: 2px;">25 years in spice trade</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="footer-organic-base px-3 px-lg-5">
+    <div class="container-fluid p-0">
+      <div class="row g-4 g-lg-5 mb-5 text-center text-sm-start justify-content-center">
+        
+        
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <h4 class="small fw-bold tracking-wider text-uppercase mb-3 font-sans" style="color: #EAD0A8;">Newsletter</h4>
+          <p class="small text-white-50 mb-3 newsletter-form-wrapper">Enter your-email subscription field to stay connected with seasonal harvests.</p>
+          <div class="newsletter-form-wrapper">
+            <form action="/website/form/" method="post" data-model_name="crm.lead" class="d-flex newsletter-entry-card w-100">
+              <input type="email" placeholder="Your email address" required="1" class="form-control">
+              <button type="submit" class="btn btn-newsletter-arrow"><i class="fa fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+        
+        
+        <div class="col-6 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+          <h4 class="footer-meta-header">Quick Links</h4>
+          <ul class="footer-matrix-links small p-0 m-0">
+            <li><a href="/our-story">About Heritage</a></li>
+            <li><a href="/shop">Product Catalog</a></li>
+            <li><a href="#">Quality Standards</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-6 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+          <h4 class="footer-meta-header">Support</h4>
+          <ul class="footer-matrix-links small p-0 m-0">
+            <li><a href="/our-story">About us</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            <li><a href="#">Premium support</a></li>
+            <li><a href="#">Privacy Matrix</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 border-top border-secondary small text-white-50 text-center text-sm-start">
+        <div>© 2026 Serendib Spices Haven Estate Limited. Registered in Sri Lanka. All trade inquiries evaluations perform.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
